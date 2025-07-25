@@ -1,0 +1,21 @@
+{
+  "name": "solfin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cucumber-js features --require \"features/support/**/*.js\" --require \"features/step_definitions/**/*.js\" --format summary --format html:reports/cucumber-report.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.1.0",
+    "@playwright/test": "^1.54.1",
+    "@types/node": "^24.1.0"
+  },
+  "dependencies": {
+    "playwright": "^1.54.1"
+  }
+}
