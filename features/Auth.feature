@@ -2,7 +2,6 @@ Feature: API Endpoint Verification
 
   As a QA, I want to ensure that the API server is up and responding correctly with proper authentication. 
            This involves verifying the server's health, successful user login, and handling of invalid login attempts.
- @
   Scenario: Verify custody API'server is up and fetching data successfully via health API
    Description: This scenario ensures that the API server is operational and can respond to basic health checks, indicating its readiness to serve requests.
     Given I have an active API connection to the Custody service

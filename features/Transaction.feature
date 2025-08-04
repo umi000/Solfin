@@ -30,4 +30,3 @@ Feature: Asset Transactions
 #       | endpoint      | status_code |
 #       | /users/2      | 200         |
 #       | /users/23     | 404         |
-#       | /posts/1      | 200         |
