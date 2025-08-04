@@ -1,6 +1,6 @@
 const { Given, When, Then } = require('@cucumber/cucumber');
 const { expect } = require('@playwright/test');
-const BASE_API_URL = 'https://devxyz-apicustody.sovera.io/api'
+const BASE_API_URL = 'https://staging-api.sovera.io/api'
 var token = "";
 Given('I have an active API connection to the Custody service', function () {
   // This step is mainly for readability and can be used to set up request-specific data
