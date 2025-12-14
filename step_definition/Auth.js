@@ -23,6 +23,12 @@ Then('the response body should contain the message {string}', async function (ex
     expect(message).toBe(expectedMessage);
 });
 
+Then('the response body dcshould contain the message {string}', async function (expectedMessage) {
+    const responseBody = await this.response.json();
+    const message = Array.isArray(responseBody.message) ? responseBody.message[0] : responseBody.message;
+    expect(message).toBe(expectedMessage);
+});
+
 When('I send a {string} request to {string} with the payload:', async function (method, endpoint, payload) {
   const requestBody = JSON.parse(payload);
   this.response = await this.apiRequestContext[method.toLowerCase()](BASE_API_URL+endpoint, {
